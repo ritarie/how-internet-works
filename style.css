@@ -1,4 +1,3 @@
-/* Основні налаштування сторінки */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background-color: #0d1117;
@@ -9,14 +8,11 @@ body {
     padding: 20px;
 }
 
-/* Заголовки */
 h1, h2, h3 {
     color: #58a6ff;
     text-align: center;
-    margin-bottom: 20px;
 }
 
-/* Основні картинки */
 .main-image {
     width: 100%;
     height: 400px;
@@ -26,28 +22,14 @@ h1, h2, h3 {
     display: block;
 }
 
-/* Відео адаптивне */
-.video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 */
-    height: 0;
-    overflow: hidden;
-    margin: 20px 0;
-}
-
-.video-container iframe,
 iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
+    height: 400px;
     border-radius: 12px;
+    margin: 20px 0;
     border: none;
 }
 
-/* Списки підсторінок */
 ul {
     list-style: none;
     padding: 0;
@@ -68,7 +50,6 @@ li:hover {
     border-color: #58a6ff;
 }
 
-/* Посилання */
 a {
     color: #58a6ff;
     text-decoration: none;
@@ -76,55 +57,12 @@ a {
     display: block;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-/* Горизонтальна лінія */
 hr {
     border: 0;
     border-top: 1px solid #30363d;
     margin: 40px 0;
 }
 
-/* Навігація сайту */
-nav.main-nav {
-    background-color: #161b22;
-    padding: 15px;
-    border-radius: 12px;
-    margin: 30px 0;
-}
-
-nav.main-nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 0;
-}
-
-nav.main-nav li {
-    background-color: #0d1117;
-    border: 1px solid #58a6ff;
-    margin: 0;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-nav.main-nav li:hover {
-    background-color: #1f242c;
-}
-
-/* Підсторінки блок */
-.sub-pages {
-    margin: 30px 0;
-    padding: 15px;
-    background-color: #161b22;
-    border-radius: 12px;
-    border: 1px solid #30363d;
-}
-
-/* Підпис під футером */
 .footer {
     text-align: center;
     margin-top: 50px;
@@ -132,22 +70,21 @@ nav.main-nav li:hover {
     color: #8b949e;
 }
 
-/* Адаптивність для мобільних */
-@media screen and (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
-    
-    h1, h2, h3 {
-        font-size: 1.5em;
-    }
-    
-    nav.main-nav ul {
-        flex-direction: column;
-    }
-    
-    .main-image,
-    iframe {
-        height: 250px;
-    }
+/* Адаптивні відео */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
 }
